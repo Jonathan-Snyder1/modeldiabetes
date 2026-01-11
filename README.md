@@ -24,12 +24,19 @@ Because this is a **3-class classification** problem, evaluation uses:
 
 
 ## Key Findings
-- Gradient Boosting collapsed the **Prediabetes** class (no predictions for class 1).
+- Gradient Boosting never predicted the prediabets class (1), and it collapsed the multiclass problem into a 2-class boundary (no diabetes vs diabetes). This indicates that the model optimized overall accuracy by avoiding prediabetes class because it was ambiguous.
 <img width="807" height="713" alt="gb boost" src="https://github.com/user-attachments/assets/392a4202-76c3-4c74-a065-abe50d74864d" />
-- Random Forest produced **non-zero predictions for Prediabetes**, but recall remained low, reflecting overlap in risk factors.
+- Random Forest produced **non-zero predictions for Prediabetes**, making it appropriate for a multiclass problem, but the recall remained low, reflecting overlapping in risk profiles for both categories.
 <img width="722" height="739" alt="rf" src="https://github.com/user-attachments/assets/31873a56-09b7-4ba1-99be-d869b72b5c4d" />
+- Most prediabetes cases were misclassified as diabetes more often than no diabetes which would suggest that the model tends to treat prediabets as a high risk state.
 
 ## How to Run
 ### 1) Install dependencies
 ```bash
+
+
+## Future Improvements
+  -use class-sensitive training
+  -compare against multinomial logisitc regression and boosted trees
+  -Add probability based analysis
 pip install -r requirements.txt
