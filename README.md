@@ -32,9 +32,10 @@ Because this is a **3-class classification** problem, evaluation uses:
 
 ## How to Run
 ### 1) Install dependencies
+pip install -r requirements.txt
 
 ## Future Improvements
-  -use class-sensitive training
-  -compare against multinomial logisitc regression and boosted trees
-  -Add probability based analysis
-pip install -r requirements.txt
+- use class-sensitive training
+- compare against multinomial logisitc regression and boosted trees
+- Add probability based analysis
+
