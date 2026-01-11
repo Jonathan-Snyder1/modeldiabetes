@@ -21,13 +21,13 @@ Because this is a **3-class classification** problem, evaluation uses:
 - Confusion matrix (counts + normalized)
 - Precision / Recall / F1 (macro + weighted)
 - Accuracy
- <img width="807" height="713" alt="gb boost" src="https://github.com/user-attachments/assets/392a4202-76c3-4c74-a065-abe50d74864d" />
- <img width="722" height="739" alt="rf" src="https://github.com/user-attachments/assets/31873a56-09b7-4ba1-99be-d869b72b5c4d" />
 
 
 ## Key Findings
 - Gradient Boosting collapsed the **Prediabetes** class (no predictions for class 1).
+<img width="807" height="713" alt="gb boost" src="https://github.com/user-attachments/assets/392a4202-76c3-4c74-a065-abe50d74864d" />
 - Random Forest produced **non-zero predictions for Prediabetes**, but recall remained low, reflecting overlap in risk factors.
+<img width="722" height="739" alt="rf" src="https://github.com/user-attachments/assets/31873a56-09b7-4ba1-99be-d869b72b5c4d" />
 
 ## How to Run
 ### 1) Install dependencies
